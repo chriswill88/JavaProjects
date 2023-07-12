@@ -29,4 +29,4 @@ quit - quit
 2. `mvn clean install`
 3. `mvn compile`
 4. `mvn dependency:copy-dependencies` : to download dependencies
-5. How to Run
+5. run
