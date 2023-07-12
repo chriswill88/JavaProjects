@@ -26,6 +26,6 @@ quit - quit
 
 ### How to run
 Install Maven - 
-'mvn clean install'
-'mvn compile'
-`mvn dependency:copy-dependencies` : to download dependencies
+1. 'mvn clean install'
+2. 'mvn compile'
+3. `mvn dependency:copy-dependencies` : to download dependencies
