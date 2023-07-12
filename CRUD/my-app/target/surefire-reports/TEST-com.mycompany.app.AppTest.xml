@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mycompany.app.AppTest" time="0.038" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.mycompany.app.AppTest" time="0.027" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\chris\Desktop\JavaProjects\CRUD\my-app\target\test-classes;C:\Users\chris\Desktop\JavaProjects\CRUD\my-app\target\classes;C:\Users\chris\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\chris\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.class.path" value="C:\Users\chris\Desktop\JavaProjects\CRUD\my-app\target\test-classes;C:\Users\chris\Desktop\JavaProjects\CRUD\my-app\target\classes;C:\Users\chris\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\chris\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\chris\.m2\repository\org\json\json\20230618\json-20230618.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\chris\AppData\Local\Temp\surefire13774461622026621085\surefirebooter13027176876664254369.jar C:\Users\chris\AppData\Local\Temp\surefire13774461622026621085 2023-07-05T02-39-40_470-jvmRun1 surefire13092314076604438011tmp surefire_03876260364025710634tmp"/>
+    <property name="sun.java.command" value="C:\Users\chris\AppData\Local\Temp\surefire12187270174132145717\surefirebooter5317778985940044025.jar C:\Users\chris\AppData\Local\Temp\surefire12187270174132145717 2023-07-11T02-10-53_090-jvmRun1 surefire9627920729334934752tmp surefire_011233629626889268714tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\chris\Desktop\JavaProjects\CRUD\my-app\target\test-classes;C:\Users\chris\Desktop\JavaProjects\CRUD\my-app\target\classes;C:\Users\chris\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\chris\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\chris\Desktop\JavaProjects\CRUD\my-app\target\test-classes;C:\Users\chris\Desktop\JavaProjects\CRUD\my-app\target\classes;C:\Users\chris\.m2\repository\junit\junit\4.11\junit-4.11.jar;C:\Users\chris\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\chris\.m2\repository\org\json\json\20230618\json-20230618.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\chris"/>
     <property name="user.language" value="en"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\chris\AppData\Local\Temp\surefire13774461622026621085\surefirebooter13027176876664254369.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\chris\AppData\Local\Temp\surefire12187270174132145717\surefirebooter5317778985940044025.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.7+8-LTS-224"/>
@@ -56,5 +56,5 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="shouldAnswerWithTrue" classname="com.mycompany.app.AppTest" time="0"/>
+  <testcase name="shouldAnswerWithTrue" classname="com.mycompany.app.AppTest" time="0.001"/>
 </testsuite>
