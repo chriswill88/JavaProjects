@@ -23,3 +23,9 @@ quit - quit
 ### Future
 - [ ] DB Storage option
 - [ ] Front-End web page
+
+### How to run
+Install Maven - 
+'mvn clean install'
+'mvn compile'
+`mvn dependency:copy-dependencies` : to download dependencies
