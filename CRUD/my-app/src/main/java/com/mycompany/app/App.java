@@ -8,12 +8,10 @@ import java.io.UnsupportedEncodingException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
-import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class App {
@@ -29,7 +27,7 @@ public class App {
         }
         System.out.println( "Saved :)" );
     }
-    
+
     public static void create(JSONObject mainObj, Scanner opScanner, File myFile) {
         // POST
         System.out.println("What is your Key? ");
@@ -43,7 +41,7 @@ public class App {
         String value = opScanner.nextLine();
 
         mainObj.put(key, value);
-        
+
         // Stringify
         System.out.println("POST: " + mainObj);
         save(mainObj, myFile);
@@ -101,7 +99,7 @@ public class App {
         // DELETE
         Iterator<String> keys = mainObj.keys();
         List<String> keyList = new ArrayList<String>();
-    
+
         while (keys.hasNext()) {
             keyList.add(keys.next());
         }
@@ -134,8 +132,6 @@ public class App {
         return null;
     }
 
-    
-
     public static void main(String[] args) {
         Scanner opScan = new Scanner(System.in);
         String operation;
@@ -147,17 +143,21 @@ public class App {
         // get JSON object from file
         try {
             String lines = Files.readString(Paths.get("fileDB.txt"));
-            mainObject = new JSONObject(lines);   
-            System.out.println("loaded json object: " + mainObject);       
+            mainObject = new JSONObject(lines);
+            System.out.println("loaded json object: " + mainObject);
         } catch (IOException e) {
             e.printStackTrace();
+        } catch (org.json.JSONException e) {
+            System.out.println("Empty File: " + mainObject);
+            mainObject = new JSONObject();
+            save(mainObject, myFile);
         }
 
         do {
-            System.out.println("What operation did you want to do? ");
+            System.out.println("What operation did you want to do? (Hint 'man')");
             operation = opScan.nextLine();
             System.out.println("Using Operation: " + operation);
-            
+
             switch (operation) {
                 case "create":
                     create(mainObject, opScan, myFile);

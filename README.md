@@ -25,8 +25,7 @@ quit - quit
 - [ ] Front-End web page
 
 ### How to run
-1. Install Maven
-2. `mvn clean install`
-3. `mvn compile`
-4. `mvn dependency:copy-dependencies` : to download dependencies
-5. run
+*Do this all from your terminal*
+1. Install Maven (3.9.3) and java ("17.0.7" 2023-04-18 LTS)
+2. to prep: `mvn clean compile assembly:single`
+3. to run: `java -jar target/my-app-1.0-SNAPSHOT-jar-with-dependencies.jar`
