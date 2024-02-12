@@ -23,6 +23,7 @@ quit - quit
 ### Future
 - [ ] DB Storage option
 - [ ] Front-End web page
+- [ ] Caching with redis
 
 ### How to run
 *Do this all from your terminal*
